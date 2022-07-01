@@ -70,7 +70,7 @@ user_name = user_input.split(user_id, 1)[1].split('-', 1)[1].replace('-', ' ')
 
 
 @st.cache
-def get_user_data(user_id, key='ZRnySx6awjQuExO9tKEJXw', v='2', shelf='read', per_page='200'):
+def get_user_data(user_id, key='ZRnySx6awjQuExO9tKEJXw', v='2', shelf='read'):
     api_url_base = 'https://www.goodreads.com/review/list/'
     final_url = api_url_base + user_id + '.xml?key=' + key + \
         '&v=' + v + '&shelf=' + shelf + '&per_page=' + per_page
