@@ -41,7 +41,7 @@ with row0_2:
     st.write('')
 
 row0_2.markdown(
-    ' '''Based on the Streamlit web app by [Tyler Richards](http://www.tylerjrichards.com), who wrote an excellent book on Streamlit which you can get [here!](https://www.amazon.com/Getting-Started-Streamlit-Data-Science/dp/180056550X)''' ')
+    ' >Based on the Streamlit web app by [Tyler Richards](http://www.tylerjrichards.com), who wrote an excellent book on Streamlit which you can get [here!](https://www.amazon.com/Getting-Started-Streamlit-Data-Science/dp/180056550X)')
 
 row1_spacer1, row1_1, row1_spacer2 = st.columns((.1, 3.2, .1))
 
