@@ -34,29 +34,29 @@ sns.set_style('darkgrid')
 row0_spacer1, row0_1, row0_spacer2, row0_2, row0_spacer3 = st.columns(
     (.1, 2, .2, 1, .1))
 
-row0_1.title('Analyzing Your Goodreads Reading Habits')
+row0_1.title('Your Reading Habits According To Goodreads')
 
 
 with row0_2:
     st.write('')
 
 row0_2.subheader(
-    'A Streamlit web app by [Tyler Richards](http://www.tylerjrichards.com), get my new book on Streamlit [here!](https://www.amazon.com/Getting-Started-Streamlit-Data-Science/dp/180056550X)')
+    'Based on the Streamlit web app by [Tyler Richards](http://www.tylerjrichards.com), who wrote an excellent book on Streamlit which you can get [here!](https://www.amazon.com/Getting-Started-Streamlit-Data-Science/dp/180056550X)')
 
 row1_spacer1, row1_1, row1_spacer2 = st.columns((.1, 3.2, .1))
 
 with row1_1:
-    st.markdown("Hey there! Welcome to Tyler's Goodreads Analysis App. This app scrapes (and never keeps or stores!) the books you've read and analyzes data about your book list, including estimating the gender breakdown of the authors, and looking at the distribution of the age and length of book you read. After some nice graphs, it tries to recommend a curated book list to you from a famous public reader, like Barack Obama or Bill Gates. One last tip, if you're on a mobile device, switch over to landscape for viewing ease. Give it a go!")
+    st.markdown("Hey there! Welcome to Katie's Goodreads Analysis App. This app scrapes (and never keeps or stores!) the books you've read and analyzes data about your book list, including estimating the gender breakdown of the authors, and looking at the distribution of the age and length of book you read. After some nice graphs, it tries to recommend a curated book list to you from a famous public reader, like Barack Obama or Bill Gates. One last tip, if you're on a mobile device, switch over to landscape for viewing ease. Give it a go!")
     st.markdown(
         "**To begin, please enter the link to your [Goodreads profile](https://www.goodreads.com/) (or just use mine!).** 👇")
 
 row2_spacer1, row2_1, row2_spacer2 = st.columns((.1, 3.2, .1))
 with row2_1:
     default_username = st.selectbox("Select one of our sample Goodreads profiles", (
-        "89659767-tyler-richards", "7128368-amanda", "17864196-adrien-treuille", "133664988-jordan-pierre"))
+        "23076758-katie-ravenwood", "89659767-tyler-richards"))
     st.markdown("**or**")
     user_input = st.text_input(
-        "Input your own Goodreads Link (e.g. https://www.goodreads.com/user/show/89659767-tyler-richards)")
+        "Input your own Goodreads Link (e.g. https://www.goodreads.com/user/show/23076758-katie-ravenwood)")
     need_help = st.expander('Need help? 👉')
     with need_help:
         st.markdown(
