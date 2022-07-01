@@ -70,16 +70,16 @@ user_name = user_input.split(user_id, 1)[1].split('-', 1)[1].replace('-', ' ')
 
 
 @st.cache
-def get_user_data(user_id, key='ZRnySx6awjQuExO9tKEJXw', v='2', shelf='read', per_page='200'):
+def get_user_data(user_id, key='ZRnySx6awjQuExO9tKEJXw', v='2', shelf='read'):
     api_url_base = 'https://www.goodreads.com/review/list/'
     final_url = api_url_base + user_id + '.xml?key=' + key + \
-        '&v=' + v + '&shelf=' + shelf + '&per_page=' + per_page
+        '&v=' + v + '&shelf=' + shelf
     contents = urllib.request.urlopen(final_url).read()
     return(contents)
 
 
 user_input = str(user_input)
-contents = get_user_data(user_id=user_id, v='2', shelf='read', per_page='200')
+contents = get_user_data(user_id=user_id, v='2', shelf='read')
 contents = xmltodict.parse(contents)
 
 line1_spacer1, line1_1, line1_spacer2 = st.columns((.1, 3.2, .1))
