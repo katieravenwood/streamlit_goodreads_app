@@ -2,4 +2,4 @@
 
 # Goodreads Streamlit App
 
-A Streamlit Goodreads app. Check it out [here](https://katieravenwood-streamlit-goodreads-app-books-xox7ht.streamlitapp.com/). 
+A Streamlit Goodreads app, based on the one created by Tyler Richards. Check it out [here](https://katieravenwood-streamlit-goodreads-app-books-xox7ht.streamlitapp.com/). 
