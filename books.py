@@ -34,8 +34,7 @@ sns.set_style('darkgrid')
 row0_spacer1, row0_1, row0_spacer2, row0_2, row0_spacer3 = st.columns(
     (.1, 2, .2, 1, .1))
 
-row0_1.title('Your Reading Habits')
-row0_1.subtitle('According to Goodreads')
+row0_1.title('Your Reading Habits According to Goodreads')
 
 
 with row0_2:
